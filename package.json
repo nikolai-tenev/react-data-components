@@ -1,6 +1,6 @@
 {
   "name": "react-data-components",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "React data grids",
   "keywords": [
     "pagination",
@@ -11,7 +11,7 @@
   ],
   "author": "Nikolai Tenev",
   "license": "MIT",
-  "main": "./src/index",
+  "main": "./lib/index",
   "files": [
     "css",
     "lib",
@@ -53,6 +53,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
+    "postinstall":"npm run clean && npm run build",
     "build": "webpack && babel src -d lib",
     "check": "flow check",
     "clean": "rimraf lib dist coverage",
