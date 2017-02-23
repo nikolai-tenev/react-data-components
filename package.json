@@ -53,7 +53,6 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "postinstall":"npm run clean && npm run build",
     "build": "webpack && babel src -d lib",
     "check": "flow check",
     "clean": "rimraf lib dist coverage",
