@@ -16,7 +16,7 @@ export default class PartialTable extends Component {
         } = this.props.data;
 
         const infoStartItem = pageNumber * pageSize + 1;
-        const infoEndItem = infoStartItem + page.length;
+        const infoEndItem = infoStartItem - 1 + page.length;
 
         return (
             <div className="table-responsive">
