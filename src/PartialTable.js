@@ -18,8 +18,8 @@ export default class PartialTable extends Component {
         const infoStartItem = pageNumber * pageSize + 1;
         const infoEndItem = infoStartItem - 1 + page.length;
 
-        return (
-            <div className="table-responsive">
+        return <div className="row">
+            <div className="col-xs-12">
                 <div className="row">
                     <div className="col-sm-6">
                         <div className="form-group">
@@ -59,7 +59,7 @@ export default class PartialTable extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-sm-12">
+                    <div className="col-sm-12 table-responsive">
                         <Table
                             className="table table-bordered table-striped table-hover table-condensed"
                             dataArray={page}
@@ -85,7 +85,7 @@ export default class PartialTable extends Component {
                     </div>
                 </div>
             </div>
-        );
+        </div>;
     }
 
 }
