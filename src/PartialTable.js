@@ -15,7 +15,7 @@ export default class PartialTable extends Component {
             totalPages, totalItems, sortBy, filterValue,
         } = this.props.data;
 
-        const infoStartItem = pageNumber * pageSize;
+        const infoStartItem = pageNumber * pageSize + 1;
         const infoEndItem = infoStartItem + page.length;
 
         return (
